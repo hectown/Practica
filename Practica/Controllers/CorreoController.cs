@@ -32,7 +32,7 @@ namespace Practica.Controllers
         public async Task<IHttpActionResult> SendAsync([FromBody] CorreoRequest correoRequest)
         // public async Task<IHttpActionResult> SendAsync()
         {
-            var resultado = emailService.SendAsync(correoRequest.Correo, correoRequest.Nombre, "hectown@gmail.com", "Miguel",correoRequest.Asunto, correoRequest.Mensaje);
+            var resultado = emailService.SendAsync(correoRequest.Correo, correoRequest.Nombre, "angello_dm@hotmail.com", "Miguel Gonzalez Nava",correoRequest.Asunto, correoRequest.Mensaje);
            // var resultado = emailService.SendAsync("hectown@gmail.com", "hector", "hectown@gmail.com", "miguel", "prueba", "texto de prueba");
 
             return Ok(resultado);
